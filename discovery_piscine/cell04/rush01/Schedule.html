@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายวิชาที่เรียนแต่ละเทอม</title>
+    <link rel="stylesheet" href="Schedule.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>รายวิชาที่เรียนในแต่ละเทอม</h1>
+
+        <!-- ส่วนเลือกเทอม -->
+        <div class="term-selector">
+            <label for="term-select">เลือกเทอมการศึกษา:</label>
+            <!-- เพิ่ม id="term-select" เพื่อให้ JavaScript อ้างอิง -->
+            <select id="term-select">
+                <option value="term-1-2026">ปีการศึกษา 2569 - เทอม 1</option>
+                <option value="term-2-2026">ปีการศึกษา 2569 - เทอม 2</option>
+            </select>
+        </div>
+
+        <!-- ตารางแสดงรายวิชา -->
+        <div class="table-responsive">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">รหัสวิชา</th>
+                        <th style="width: 60%;">ชื่อวิชา</th>
+                        <th style="width: 20%;">หน่วยกิต</th>
+                        <th style="width: 0%;">ผู้สอน</th>
+                    </tr>
+                </thead>
+                <!-- ใส่ id="schedule-body" เพื่อให้ JavaScript สั่งเปลี่ยนแถวข้อมูลข้างในได้ -->
+                <tbody id="schedule-body">
+                    <!-- ข้อมูลจะถูกเปลี่ยนด้วย JavaScript อัตโนมัติ -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- เชื่อมโยงไฟล์ JavaScript -->
+    <script src="Schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางวิชา</title>
+    <link rel="stylesheet" href="Course_Schedule.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>ตารางวิชา</h1>
+
+        <!-- ส่วนสำหรับเลือกเทอม (อนาคตสามารถใช้ JavaScript หรือ Backend ดึงข้อมูลตามเทอมที่เลือกได้) -->
+        <div class="term-selector">
+            <label for="term-select">เลือกเทอมการศึกษา:</label>
+            <select id="term-select">
+                <option value="term-1-2026">ปีการศึกษา 2569 - เทอม 1</option>
+                <option value="term-2-2025">ปีการศึกษา 2568 - เทอม 2</option>
+            </select>
+        </div>
+
+        <!-- ตารางแสดงวิชาเรียน -->
+        <div class="table-responsive">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>รหัสวิชา</th>
+                        <th>ชื่อวิชา</th>
+                        <th>หน่วยกิต</th>
+                        <th>ผู้สอน</th>
+                    </tr>
+                </thead>
+                <tbody id="schedule-body">
+                    <!-- 
+                      ส่วนนี้เตรียมไว้สำหรับใส่ข้อมูลจาก Database (ผ่าน PHP, Node.js หรือ JavaScript Fetch API) 
+                      ตัวอย่างข้อมูลจำลอง (Mock Data) เบื้องต้น:
+                    -->
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Computer Science</td>
+                        <td>3</td>
+                        <td>ดร.สมชาย ใจดี</td>
+                    </tr>
+                    <tr>
+                        <td>MATH202</td>
+                        <td>Calculus II</td>
+                        <td>3</td>
+                        <td>ศ.สมศรี มีสุข</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Course_Schedule.js"></script>
+
+</body>
+</html>
