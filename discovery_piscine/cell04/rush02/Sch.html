@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบแสดงหลักสูตรและรายวิชา</title>
+    <!-- เชื่อมโยงไฟล์ CSS ภายนอก -->
+    <link rel="stylesheet" href="Sch.css">
+</head>
+<body>
+
+    <header>
+        <h1>ระบบแสดงข้อมูลหลักสูตรและรายวิชา</h1>
+        <p>เลือกคณะทางด้านซ้ายเพื่อดูรายละเอียดสาขาและรายวิชา</p>
+    </header>
+
+    <div class="container">
+        <!-- ฝั่งซ้าย: ปุ่มเลือกคณะ -->
+        <div class="sidebar">
+            <h2>รายชื่อคณะ</h2>
+            <div class="faculty-list" id="facultyList">
+                <!-- รายชื่อปุ่มคณะจะถูกสร้างอัตโนมัติด้วย JavaScript -->
+            </div>
+        </div>
+
+        <!-- ฝั่งขวา: แสดงข้อมูลหลักสูตรและรายวิชา -->
+        <div class="content-panel" id="contentPanel">
+            <div class="placeholder-text">กรุณาเลือกคณะจากเมนูด้านซ้ายเพื่อดูรายละเอียด</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 ระบบสารสนเทศหลักสูตรการศึกษา
+    </footer>
+
+    <!-- เชื่อมโยงไฟล์ JavaScript ภายนอก -->
+    <script src="Sch.js"></script>
+</body>
+</html>

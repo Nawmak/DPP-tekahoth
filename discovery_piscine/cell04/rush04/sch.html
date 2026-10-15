@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเปรียบเทียบหลักสูตร 2 ฝั่ง</title>
+    <link rel="stylesheet" href="sch.css">
+</head>
+<body>
+
+    <header>
+        <h1>ระบบเปรียบเทียบข้อมูลหลักสูตรและรายวิชา</h1>
+        <p>เลือกคณะฝั่งซ้ายและฝั่งขวาเพื่อเปรียบเทียบข้อมูลรายวิชาพร้อมกัน</p>
+    </header>
+
+    <div class="container">
+        <!-- ฝั่งซ้าย -->
+        <div class="comparison-column">
+            <div class="selector-box">
+                <h2>🎓 ฝั่งซ้าย: เลือกคณะ</h2>
+                <select id="facultySelect1" class="faculty-dropdown" onchange="loadFacultyData(1)">
+                    <option value="">-- กรุณาเลือกคณะฝั่งซ้าย --</option>
+                </select>
+            </div>
+            <div class="content-panel" id="contentPanel1">
+                <div class="placeholder-text">ยังไม่ได้เลือกคณะฝั่งซ้าย</div>
+            </div>
+        </div>
+
+        <!-- ฝั่งขวา -->
+        <div class="comparison-column">
+            <div class="selector-box">
+                <h2>🎓 ฝั่งขวา: เลือกคณะ</h2>
+                <select id="facultySelect2" class="faculty-dropdown" onchange="loadFacultyData(2)">
+                    <option value="">-- กรุณาเลือกคณะฝั่งขวา --</option>
+                </select>
+            </div>
+            <div class="content-panel" id="contentPanel2">
+                <div class="placeholder-text">ยังไม่ได้เลือกคณะฝั่งขวา</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 ระบบสารสนเทศหลักสูตรการศึกษา
+    </footer>
+
+    <script src="sch.js"></script>
+</body>
+</html>

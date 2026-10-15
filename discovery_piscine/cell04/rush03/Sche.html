@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบแสดงหลักสูตรและรายวิชา</title>
+    <link rel="stylesheet" href="Sche.css">
+</head>
+<body>
+
+    <header>
+        <h1>ระบบแสดงข้อมูลหลักสูตรและรายวิชา</h1>
+        <p>เลือกคณะจาก 2 ฝั่งด้านล่างเพื่อดูรายละเอียดสาขาและรายวิชา</p>
+    </header>
+
+    <div class="container">
+        <!-- ส่วนเลือกคณะ: แบ่งเป็น 2 ฝั่ง (คอลัมน์ซ้าย / คอลัมน์ขวา) -->
+        <div class="selection-section">
+            <div class="column-group">
+                <h2>ฝั่งที่ 1: กลุ่มคณะวิทยาศาสตร์และเทคโนโลยี</h2>
+                <div class="faculty-list" id="facultyList1">
+                    <!-- ปุ่มคณะฝั่งที่ 1 จะถูกสร้างด้วย JavaScript -->
+                </div>
+            </div>
+
+            <div class="column-group">
+                <h2>ฝั่งที่ 2: กลุ่มคณะมนุษยศาสตร์และสังคมศาสตร์ / อื่นๆ</h2>
+                <div class="faculty-list" id="facultyList2">
+                    <!-- ปุ่มคณะฝั่งที่ 2 จะถูกสร้างด้วย JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ส่วนแสดงข้อมูลรายละเอียดและรายวิชา -->
+        <div class="content-panel" id="contentPanel">
+            <div class="placeholder-text">กรุณาเลือกคณะจากกลุ่มด้านบนเพื่อดูรายละเอียด</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 ระบบสารสนเทศหลักสูตรการศึกษา
+    </footer>
+
+    <script src="Sche.js"></script>
+</body>
+</html>
